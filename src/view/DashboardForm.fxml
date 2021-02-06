@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <Pane layoutX="231.0" layoutY="10.0" prefHeight="725.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="88.0" fitWidth="87.0" layoutX="16.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/logo0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="110.0" layoutY="29.0" text="Royal">
+         <font>
+            <Font name="Cambria Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="65.0" text="Institute">
+         <font>
+            <Font name="Cambria Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="243.0" prefHeight="49.0" prefWidth="166.0" ripplerFill="WHITE" text="Registration">
+         <font>
+            <Font name="Cambria" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="312.0" prefHeight="49.0" prefWidth="118.0" ripplerFill="WHITE" text="Student">
+         <font>
+            <Font name="Cambria" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="379.0" ripplerFill="WHITE" text="Course">
+         <font>
+            <Font name="Cambria" size="25.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="12.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/program_127px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="50.0" layoutX="13.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/student_male_127px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="50.0" layoutX="13.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/registration_127px.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="11.0" layoutY="680.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/shutdown_127px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <AnchorPane layoutX="242.0" layoutY="11.0" prefHeight="725.0" prefWidth="1100.0" style="-fx-background-color: black;" />
+      <Separator layoutX="18.0" layoutY="124.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
