@@ -29,20 +29,44 @@
             <Font name="Cambria Bold" size="27.0" />
          </font>
       </Label>
-      <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="243.0" prefHeight="49.0" prefWidth="166.0" ripplerFill="WHITE" text="Registration">
+      <JFXButton fx:id="btnRegistration" buttonType="RAISED" layoutX="63.0" layoutY="243.0" onAction="#btnRegistrationOnAction" prefHeight="49.0" prefWidth="166.0" text="Registration">
          <font>
             <Font name="Cambria" size="25.0" />
          </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="312.0" prefHeight="49.0" prefWidth="118.0" ripplerFill="WHITE" text="Student">
+      <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="312.0" prefHeight="49.0" prefWidth="118.0" text="Student">
          <font>
             <Font name="Cambria" size="25.0" />
          </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="379.0" ripplerFill="WHITE" text="Course">
+      <JFXButton fx:id="btnCourse" buttonType="RAISED" layoutX="63.0" layoutY="379.0" onAction="#btnCourseOnAction" text="Course">
          <font>
             <Font name="Cambria" size="25.0" />
          </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
       </JFXButton>
       <ImageView fitHeight="40.0" fitWidth="60.0" layoutX="12.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -59,7 +83,7 @@
             <Image url="@../asserts/registration_127px.png" />
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="11.0" layoutY="680.0" text=" ">
+      <JFXButton fx:id="btnExit" buttonType="RAISED" contentDisplay="CENTER" layoutX="11.0" layoutY="680.0" onAction="#btnExitOnAction" text=" ">
          <graphic>
             <ImageView fitHeight="47.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -76,7 +100,7 @@
             </LinearGradient>
          </ripplerFill>
       </JFXButton>
-      <AnchorPane layoutX="242.0" layoutY="11.0" prefHeight="725.0" prefWidth="1100.0" style="-fx-background-color: black;" />
+      <AnchorPane fx:id="dashboardAnchor" layoutX="242.0" layoutY="11.0" prefHeight="725.0" prefWidth="1100.0" />
       <Separator layoutX="18.0" layoutY="124.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

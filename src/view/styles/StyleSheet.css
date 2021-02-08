@@ -2,8 +2,18 @@
 /*Royal-Institute-Project*/
 
 
+/*Start MainForm*/
+.mainForm{
+    -fx-background-color: TRANSPARENT;
+}
+/*End MainForm*/
+
+
 
 /* Start login form*/
+.login_main_back{
+    -fx-background-color: TRANSPARENT;
+}
 .login_main{
     -fx-background-color: #ced6e0;
     -fx-background-radius: 50 50 50 50;

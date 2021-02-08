@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="725.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseFormController">
+   <children>
+      <Label layoutX="507.0" layoutY="22.0" text="Course">
+         <font>
+            <Font name="Cambria Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="104.0" text="Course ID ">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCourseID" layoutX="167.0" layoutY="101.0" prefHeight="31.0" prefWidth="112.0" promptText="CT0000" />
+      <JFXTextField fx:id="txtCourseName" focusColor="WHITE" layoutX="217.0" layoutY="179.0" prefHeight="38.0" prefWidth="327.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="54.0" layoutY="190.0" text="Course Name ">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCourseDuration" focusColor="WHITE" layoutX="216.0" layoutY="232.0" prefHeight="38.0" prefWidth="327.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="53.0" layoutY="244.0" text="Course Duration">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCourseFee" focusColor="WHITE" layoutX="216.0" layoutY="287.0" prefHeight="38.0" prefWidth="327.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="53.0" layoutY="299.0" text="Course Fee">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSaveCourse" buttonType="RAISED" layoutX="773.0" layoutY="204.0" onAction="#btnSaveCourseOnAction" prefHeight="38.0" prefWidth="173.0" text="Save Course">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0dff00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="35.0" layoutY="156.0" prefHeight="0.0" prefWidth="1031.0" />
+      <Separator layoutX="591.0" layoutY="170.0" orientation="VERTICAL" prefHeight="200.0" />
+      <JFXButton fx:id="btnUpdateCourse" buttonType="RAISED" layoutX="773.0" layoutY="271.0" onAction="#btnUpdateCourseOnAction" prefHeight="38.0" prefWidth="173.0" text="Update Course">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0dff00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="35.0" layoutY="388.0" prefHeight="0.0" prefWidth="1031.0" />
+      <TableView layoutX="35.0" layoutY="415.0" prefHeight="237.0" prefWidth="1031.0">
+        <columns>
+          <TableColumn prefWidth="125.0" text="Course ID" />
+            <TableColumn prefWidth="301.0" text="Course Name" />
+            <TableColumn prefWidth="203.0" text="Course Duration" />
+            <TableColumn prefWidth="196.0" text="Course Fee" />
+            <TableColumn prefWidth="205.0" text="Option" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

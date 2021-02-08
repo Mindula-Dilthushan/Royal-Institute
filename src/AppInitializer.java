@@ -1,7 +1,9 @@
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import java.util.Timer;
@@ -12,9 +14,11 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("view/StartUpForm.fxml"))));
+        Parent root = FXMLLoader.load(getClass().getResource("view/StartUpForm.fxml"));
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
-        primaryStage.setResizable(true);
+        scene.setFill(Color.TRANSPARENT);
         primaryStage.show();
 
         Timer timer = new Timer();
@@ -26,7 +30,7 @@ public class AppInitializer extends Application {
                     public void run() {
                         Stage window = (Stage) primaryStage.getScene().getWindow();
                         try {
-                            window.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("view/MainForm.fxml"))));
+                            window.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("view/LoginForm.fxml"))));
                             primaryStage.centerOnScreen();
                         } catch (Exception e) {
                         }
