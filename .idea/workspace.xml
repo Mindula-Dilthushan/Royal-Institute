@@ -2,32 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0def8816-371c-4cc5-821e-ce22c5c246ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/BOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/SuperBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/CourseBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/CourseBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/CrudDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/DAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/QueryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/SuperDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/CourseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/CourseDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/CourseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Registration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hibernate/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hibernate/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hibernate/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Royal Institute.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Royal Institute.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tm/CourseTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/CourseBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/CourseBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/CourseBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/CourseBOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/CourseFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CourseFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/CourseDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/CourseDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CourseForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CourseForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,15 +65,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,6 +92,7 @@
       <updated>1612760670294</updated>
       <workItem from="1612760672479" duration="1096000" />
       <workItem from="1612761815217" duration="3621000" />
+      <workItem from="1612839004926" duration="2251000" />
     </task>
     <servers />
   </component>

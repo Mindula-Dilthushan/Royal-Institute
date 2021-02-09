@@ -42,6 +42,15 @@ public class CourseDAOImpl implements CourseDAO {
 
     @Override
     public List<Course> getAll() throws Exception {
+        try{
+            Session session = sessionFactory.openSession();
+            session.beginTransaction();
+            List<Course> courseList = session.createNativeQuery("SELECT * FROM course",Course.class).list();
+            session.getTransaction().commit();
+            return courseList;
+        }catch (Exception e){
+
+        }
         return null;
     }
 }

@@ -84,13 +84,13 @@
          </font>
       </JFXButton>
       <Separator layoutX="35.0" layoutY="388.0" prefHeight="0.0" prefWidth="1031.0" />
-      <TableView layoutX="35.0" layoutY="415.0" prefHeight="237.0" prefWidth="1031.0">
+      <TableView fx:id="tblCourse" layoutX="35.0" layoutY="415.0" prefHeight="237.0" prefWidth="1031.0">
         <columns>
-          <TableColumn prefWidth="125.0" text="Course ID" />
-            <TableColumn prefWidth="301.0" text="Course Name" />
-            <TableColumn prefWidth="203.0" text="Course Duration" />
-            <TableColumn prefWidth="196.0" text="Course Fee" />
-            <TableColumn prefWidth="205.0" text="Option" />
+          <TableColumn fx:id="colCourseID" prefWidth="125.0" text="Course ID" />
+            <TableColumn fx:id="colCourseName" prefWidth="301.0" text="Course Name" />
+            <TableColumn fx:id="colCourseDuration" prefWidth="203.0" text="Course Duration" />
+            <TableColumn fx:id="colCourseFee" prefWidth="196.0" text="Course Fee" />
+            <TableColumn fx:id="colBtnDelete" prefWidth="205.0" text="Option" />
         </columns>
       </TableView>
    </children>
