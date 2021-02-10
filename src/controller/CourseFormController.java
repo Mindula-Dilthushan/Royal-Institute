@@ -8,13 +8,11 @@ import dto.CourseDTO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import tm.CourseTM;
-
 import java.util.List;
 
 public class CourseFormController {
@@ -30,9 +28,10 @@ public class CourseFormController {
     public TableColumn <CourseTM , String> colCourseName;
     public TableColumn <CourseTM , String> colCourseDuration;
     public TableColumn <CourseTM , Double> colCourseFee;
-    public TableColumn <CourseTM , Button> colBtnDelete;
+    public JFXButton btnDeleteCourse;
 
     private CourseBO courseBO = (CourseBO) BOFactory.getBoFactory().getSuperBO(BOFactory.BOType.COURSE);
+
     ObservableList<CourseTM> courseTMObservableList = FXCollections.observableArrayList();
 
     public void initialize(){
@@ -45,12 +44,11 @@ public class CourseFormController {
         colCourseName.setCellValueFactory(new PropertyValueFactory<>("coName"));
         colCourseDuration.setCellValueFactory(new PropertyValueFactory<>("coDuration"));
         colCourseFee.setCellValueFactory(new PropertyValueFactory<>("coFee"));
-        colBtnDelete.setCellValueFactory(new PropertyValueFactory<>("btnDelete"));
         tblCourse.setItems(courseTMObservableList);
     }
-
     private void loadCourse(){
           try{
+              courseTMObservableList.clear();
               List<CourseDTO> courseDTOList = courseBO.getAll();
               for (CourseDTO courseDTO : courseDTOList){
                   courseTMObservableList.add(
@@ -66,7 +64,6 @@ public class CourseFormController {
           }  catch (Exception e){
           }
     }
-
     public void btnSaveCourseOnAction(ActionEvent actionEvent) {
         try{
             boolean saved = courseBO.saveCourse(
@@ -77,7 +74,6 @@ public class CourseFormController {
                         Double.parseDouble(txtCourseFee.getText())
                     )
             );
-
             if (saved){
                 System.out.println("save");
             }else {
@@ -86,7 +82,44 @@ public class CourseFormController {
         }catch (Exception e){
         }
     }
-
     public void btnUpdateCourseOnAction(ActionEvent actionEvent) {
+        try{
+            if(courseBO.updateCourse(
+                    new CourseDTO(
+                            txtCourseID.getText(),
+                            txtCourseName.getText(),
+                            txtCourseDuration.getText(),
+                            Double.parseDouble(txtCourseFee.getText())
+                    )
+            )){
+                loadCourse();
+            }else {
+            }
+        }catch (Exception e){
+        }
+    }
+    public void btnDeleteCourseOnAction(ActionEvent actionEvent) {
+
+        if(tblCourse.getSelectionModel().getSelectedItem() !=null){
+            CourseTM courseTM = tblCourse.getSelectionModel().getSelectedItem();
+            try {
+                boolean deleteCourse = courseBO.deleteCourse(
+                        new CourseDTO(
+                                courseTM.getCoId(),
+                                courseTM.getCoName(),
+                                courseTM.getCoDuration(),
+                                courseTM.getCoFee()
+                        )
+                );
+                    if (deleteCourse){
+                        courseTMObservableList.remove(courseTM);
+                        tblCourse.refresh();
+                    }else {
+                        courseTMObservableList.remove(courseTM);
+                        tblCourse.refresh();
+                    }
+            }catch (Exception e){
+            }
+        }
     }
 }

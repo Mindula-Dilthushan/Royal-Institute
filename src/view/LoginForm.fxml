@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1500.0" styleClass="login_main_back" stylesheets="@styles/StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: linear-gradient(to right top, #003cff, #0043ff, #004aff, #0450ff, #0c56ff, #006eff, #0082ff, #0094ff, #00b3ff, #00ceff, #00e6fd, #5ffbf1);;" styleClass="login_main_back" stylesheets="@styles/StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
-      <AnchorPane layoutX="75.0" layoutY="75.0" prefHeight="750.0" prefWidth="1350.0" styleClass="login_main_back" stylesheets="@styles/StyleSheet.css">
+      <AnchorPane layoutX="75.0" layoutY="75.0" prefHeight="750.0" prefWidth="1350.0" style="-fx-border-color: black;" styleClass="login_main_back" stylesheets="@styles/StyleSheet.css">
          <children>
             <Pane layoutX="466.0" layoutY="27.0" prefHeight="696.0" prefWidth="418.0" styleClass="login_main" stylesheets="@styles/StyleSheet.css">
                <children>
