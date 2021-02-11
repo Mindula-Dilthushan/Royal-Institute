@@ -11,25 +11,31 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: linear-gradient(to right top, #003cff, #0043ff, #004aff, #0450ff, #0c56ff, #006eff, #0082ff, #0094ff, #00b3ff, #00ceff, #00e6fd, #5ffbf1);;" styleClass="login_main_back" stylesheets="@styles/StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" styleClass="login_main_back" stylesheets="@styles/StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
-      <AnchorPane layoutX="75.0" layoutY="75.0" prefHeight="750.0" prefWidth="1350.0" style="-fx-border-color: black;" styleClass="login_main_back" stylesheets="@styles/StyleSheet.css">
+      <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="800.0" prefWidth="1400.0" styleClass="login_main_back_2" stylesheets="@styles/StyleSheet.css">
          <children>
-            <Pane layoutX="466.0" layoutY="27.0" prefHeight="696.0" prefWidth="418.0" styleClass="login_main" stylesheets="@styles/StyleSheet.css">
+            <Pane layoutX="509.0" layoutY="53.0" prefHeight="696.0" prefWidth="385.0" styleClass="login_main" stylesheets="@styles/StyleSheet.css">
                <children>
-                  <Pane layoutY="248.0" prefHeight="200.0" prefWidth="349.0" styleClass="login_left_pane" stylesheets="@styles/StyleSheet.css">
+                  <Pane layoutY="256.0" prefHeight="192.0" prefWidth="334.0" styleClass="login_left_pane" stylesheets="@styles/StyleSheet.css">
                      <children>
                         <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="15.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                            <image>
                               <Image url="@../asserts/male_user_127px.png" />
                            </image>
+                           <cursor>
+                              <Cursor fx:constant="CLOSED_HAND" />
+                           </cursor>
                         </ImageView>
                         <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="14.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                            <image>
                               <Image url="@../asserts/password_127px.png" />
                            </image>
+                           <cursor>
+                              <Cursor fx:constant="CLOSED_HAND" />
+                           </cursor>
                         </ImageView>
-                        <JFXTextField fx:id="txtUserName" focusColor="DODGERBLUE" labelFloat="true" layoutX="72.0" layoutY="49.0" prefHeight="38.0" prefWidth="179.0" promptText="User Name" unFocusColor="#dfe4ea">
+                        <JFXTextField fx:id="txtUserName" focusColor="DODGERBLUE" labelFloat="true" layoutX="72.0" layoutY="49.0" prefHeight="38.0" prefWidth="179.0" promptText="User Name" unFocusColor="#e1e8ff">
                            <font>
                               <Font name="Cambria" size="20.0" />
                            </font>
@@ -47,10 +53,13 @@
                                  </image>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </JFXButton>
                      </children>
                   </Pane>
-                  <JFXButton fx:id="btnEnter" buttonType="RAISED" contentDisplay="CENTER" layoutX="312.0" layoutY="316.0" onAction="#btnEnterOnAction" prefHeight="63.0" prefWidth="65.0" styleClass="login_btn" stylesheets="@styles/StyleSheet.css" text=" ">
+                  <JFXButton fx:id="btnEnter" buttonType="RAISED" contentDisplay="CENTER" layoutX="296.0" layoutY="316.0" onAction="#btnEnterOnAction" prefHeight="63.0" prefWidth="65.0" ripplerFill="#ffffff00" styleClass="login_btn" stylesheets="@styles/StyleSheet.css" text=" " textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="54.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -62,28 +71,37 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <Label layoutX="161.0" layoutY="24.0" text="Login ">
+                  <Label layoutX="144.0" layoutY="24.0" text="Login " textFill="WHITE">
                      <font>
                         <Font name="Cambria Bold" size="35.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="147.0" fitWidth="155.0" layoutX="136.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="147.0" fitWidth="155.0" layoutX="119.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../asserts/logo0.png" />
                      </image>
                      <effect>
-                        <Bloom threshold="0.96" />
+                        <Bloom threshold="0.88" />
                      </effect>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
                   </ImageView>
-                  <Label layoutX="91.0" layoutY="633.0" text="Copyright © 2021 Alpha X Company ">
+                  <Label layoutX="75.0" layoutY="633.0" text="Copyright © 2021 Alpha X Company ">
                      <font>
-                        <Font name="Cambria" size="15.0" />
+                        <Font name="Cambria Bold Italic" size="15.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
                   </Label>
-                  <Label layoutX="149.0" layoutY="662.0" text="All rights reserved">
+                  <Label layoutX="133.0" layoutY="662.0" text="All rights reserved">
                      <font>
-                        <Font name="Cambria" size="15.0" />
+                        <Font name="Cambria Bold Italic" size="15.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
                   </Label>
                </children>
             </Pane>

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0def8816-371c-4cc5-821e-ce22c5c246ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/Login Form.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/Starting Logo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/CourseBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/CourseBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/CourseBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/CourseBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/CourseFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CourseFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/CourseDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/CourseDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/CourseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/CourseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CourseForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CourseForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/styles/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/styles/StyleSheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,17 +64,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AppInitializer" />
@@ -99,6 +85,8 @@
       <workItem from="1612963605617" duration="1613000" />
       <workItem from="1612965318638" duration="2000" />
       <workItem from="1612965330541" duration="3081000" />
+      <workItem from="1613008900138" duration="1201000" />
+      <workItem from="1613010997463" duration="5307000" />
     </task>
     <servers />
   </component>

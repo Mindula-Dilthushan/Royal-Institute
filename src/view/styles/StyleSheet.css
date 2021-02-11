@@ -8,22 +8,27 @@
 }
 /*End MainForm*/
 
-
-
 /* Start login form*/
 .login_main_back{
-    -fx-background-color: TRANSPARENT;
+    -fx-background-color: #546de5;
+}
+.login_main_back_2{
+    -fx-background-color: white;
+    -fx-background-radius: 50 50 50 50;
 }
 .login_main{
-    -fx-background-color: #ced6e0;
+    -fx-background-color: linear-gradient(to bottom, #2a5cff, #3866ff, #456fff, #5079ff, #5c82ff, #6c8dff, #7b99ff, #8aa4ff, #a0b5ff, #b5c6ff, #cbd7ff, #e1e8ff);
     -fx-background-radius: 50 50 50 50;
 }
 .login_left_pane{
-    -fx-background-color: #dfe4ea;
+    -fx-background-color: #E1E8FF;
     -fx-background-radius: 0 100 100 0;
 }
 .login_btn{
-    -fx-background-color: #1e90ff;
+    -fx-background-color: linear-gradient(to left, #6388ff, #6d90ff, #7797ff, #809fff, #8aa6ff, #95aeff, #9fb6ff, #aabeff, #b8c8ff, #c6d3ff, #d3ddff, #e1e8ff);
     -fx-background-radius: 100;
+}
+.login_circle_0{
+    -fx-fill:#34ace0;
 }
 /* End login form*/

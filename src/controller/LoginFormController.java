@@ -13,6 +13,7 @@ import javafx.stage.StageStyle;
 import java.net.URL;
 
 public class LoginFormController {
+
     public JFXTextField txtUserName;
     public JFXTextField txtPw;
     public JFXButton btnPwView;
