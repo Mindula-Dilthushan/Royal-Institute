@@ -12,10 +12,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="725.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationFormController">
     <children>
-        <Label layoutX="44.0" layoutY="95.0" text="Student ID ">
+        <Label layoutX="266.0" layoutY="95.0" text="Student ID ">
             <font>
                 <Font name="Cambria Bold" size="20.0" />
             </font>
@@ -25,7 +24,7 @@
                 <Font name="Cambria" size="18.0" />
             </font>
         </JFXTextField>
-        <Label layoutX="174.0" layoutY="95.0" text="ST001">
+        <Label layoutX="396.0" layoutY="95.0" text="ST001">
             <font>
                 <Font name="Cambria Bold" size="20.0" />
             </font>
@@ -97,12 +96,12 @@
                 <Font name="Cambria" size="18.0" />
             </font>
         </JFXTextField>
-        <Label layoutX="44.0" layoutY="443.0" text="Fee">
+        <Label layoutX="473.0" layoutY="395.0" text="Fee">
             <font>
                 <Font name="Cambria" size="20.0" />
             </font>
         </Label>
-        <JFXTextField focusColor="WHITE" layoutX="174.0" layoutY="430.0" prefHeight="38.0" prefWidth="242.0" unFocusColor="BLACK">
+        <JFXTextField focusColor="WHITE" layoutX="603.0" layoutY="382.0" prefHeight="38.0" prefWidth="242.0" unFocusColor="BLACK">
             <font>
                 <Font name="Cambria" size="18.0" />
             </font>
@@ -117,8 +116,8 @@
                 <Font name="Cambria" size="18.0" />
             </font>
         </JFXTextField>
-        <Separator layoutX="35.0" layoutY="491.0" prefHeight="0.0" prefWidth="1031.0" />
-        <TableView layoutX="39.0" layoutY="511.0" prefHeight="200.0" prefWidth="728.0">
+        <Separator layoutX="35.0" layoutY="448.0" prefHeight="0.0" prefWidth="1031.0" />
+        <TableView layoutX="39.0" layoutY="463.0" prefHeight="248.0" prefWidth="728.0">
             <columns>
                 <TableColumn prefWidth="112.0" text="ST ID" />
                 <TableColumn prefWidth="114.0" text="Program ID" />
@@ -127,18 +126,28 @@
                 <TableColumn prefWidth="143.0" text="Fee (LKR)" />
             </columns>
         </TableView>
-        <JFXButton buttonType="RAISED" layoutX="765.0" layoutY="511.0" prefHeight="31.0" prefWidth="138.0" text="Add" />
-        <JFXButton buttonType="RAISED" layoutX="934.0" layoutY="511.0" prefHeight="31.0" prefWidth="138.0" text="Remove" />
-        <JFXTextField focusColor="WHITE" layoutX="845.0" layoutY="571.0" prefHeight="38.0" prefWidth="178.0" unFocusColor="BLACK">
+        <JFXButton buttonType="RAISED" layoutX="779.0" layoutY="521.0" prefHeight="31.0" prefWidth="138.0" text="Add" />
+        <JFXButton buttonType="RAISED" layoutX="948.0" layoutY="521.0" prefHeight="31.0" prefWidth="138.0" text="Remove" />
+        <JFXTextField focusColor="WHITE" layoutX="870.0" layoutY="601.0" prefHeight="38.0" prefWidth="178.0" unFocusColor="BLACK">
             <font>
                 <Font name="Cambria" size="18.0" />
             </font>
         </JFXTextField>
-        <Label layoutX="777.0" layoutY="578.0" text="Total">
+        <Label layoutX="802.0" layoutY="608.0" text="Total">
             <font>
                 <Font name="Cambria" size="20.0" />
             </font>
         </Label>
-        <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="644.0" prefHeight="51.0" prefWidth="191.0" text="Register" />
+        <JFXButton buttonType="RAISED" layoutX="849.0" layoutY="657.0" prefHeight="51.0" prefWidth="191.0" text="Register" />
+      <Label layoutX="38.0" layoutY="96.0" text="Reg No">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="95.0" text="R0001">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

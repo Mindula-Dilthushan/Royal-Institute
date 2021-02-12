@@ -13,6 +13,7 @@
 
 <AnchorPane prefHeight="750.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
    <children>
+      <Pane prefHeight="750.0" prefWidth="236.0" />
       <Pane layoutX="231.0" layoutY="10.0" prefHeight="725.0" prefWidth="5.0" style="-fx-background-color: black;" />
       <ImageView fitHeight="88.0" fitWidth="87.0" layoutX="16.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -42,7 +43,7 @@
             </LinearGradient>
          </ripplerFill>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="312.0" prefHeight="49.0" prefWidth="118.0" text="Student">
+      <JFXButton fx:id="btnStudent" buttonType="RAISED" layoutX="63.0" layoutY="312.0" onAction="#btnStudentOnAction" prefHeight="49.0" prefWidth="118.0" text="Student">
          <font>
             <Font name="Cambria" size="25.0" />
          </font>

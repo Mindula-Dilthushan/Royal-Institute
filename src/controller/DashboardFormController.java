@@ -7,10 +7,12 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class DashboardFormController {
+
     public AnchorPane dashboardAnchor;
     public JFXButton btnExit;
     public JFXButton btnCourse;
     public JFXButton btnRegistration;
+    public JFXButton btnStudent;
 
     public void initialize(){
         try {
@@ -39,6 +41,15 @@ public class DashboardFormController {
         try {
             dashboardAnchor.getChildren().clear();
             AnchorPane load = FXMLLoader.load(this.getClass().getResource("/view/RegistrationForm.fxml"));
+            dashboardAnchor.getChildren().addAll(load.getChildren());
+        }catch (Exception e){
+        }
+    }
+
+    public void btnStudentOnAction(ActionEvent actionEvent) {
+        try {
+            dashboardAnchor.getChildren().clear();
+            AnchorPane load = FXMLLoader.load(this.getClass().getResource("/view/StudentForm.fxml"));
             dashboardAnchor.getChildren().addAll(load.getChildren());
         }catch (Exception e){
         }

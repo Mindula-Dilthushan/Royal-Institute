@@ -2,11 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0def8816-371c-4cc5-821e-ce22c5c246ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/Login Form.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/Starting Logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/AddRegistrationBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/RegistrationBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/StudentBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/AddRegistrationBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/RegistrationBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/StudentBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/StudentFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/RegistrationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/StudentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/StudentDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/RegistrationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/StudentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/StudentForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DashboardFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DashboardForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/RegistrationForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegistrationForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/styles/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/styles/StyleSheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -64,6 +84,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AppInitializer" />
@@ -87,6 +120,10 @@
       <workItem from="1612965330541" duration="3081000" />
       <workItem from="1613008900138" duration="1201000" />
       <workItem from="1613010997463" duration="5307000" />
+      <workItem from="1613043730323" duration="40000" />
+      <workItem from="1613092853547" duration="7000" />
+      <workItem from="1613093149681" duration="1516000" />
+      <workItem from="1613096560394" duration="6647000" />
     </task>
     <servers />
   </component>

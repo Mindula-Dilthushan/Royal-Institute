@@ -16,8 +16,8 @@ public class Course {
     private String duration;
     private double courseFee;
 
-//    @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
-//    private List<Registration> registrationList = new ArrayList();
+    @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
+    private List<Registration> registrationList = new ArrayList();
 
     public Course(){
     }
@@ -61,13 +61,13 @@ public class Course {
         this.courseFee = courseFee;
     }
 
-//    public List<Registration> getRegistrationList() {
-//        return registrationList;
-//    }
-//
-//    public void setRegistrationList(List<Registration> registrationList) {
-//        this.registrationList = registrationList;
-//    }
+    public List<Registration> getRegistrationList() {
+        return registrationList;
+    }
+
+    public void setRegistrationList(List<Registration> registrationList) {
+        this.registrationList = registrationList;
+    }
 
     @Override
     public String toString() {
@@ -76,7 +76,7 @@ public class Course {
                 ", courseName='" + courseName + '\'' +
                 ", duration='" + duration + '\'' +
                 ", courseFee=" + courseFee +
-//                ", registrationList=" + registrationList +
+                ", registrationList=" + registrationList +
                 '}';
     }
 }

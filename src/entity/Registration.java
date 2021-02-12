@@ -1,5 +1,8 @@
 package entity;
 
+import dto.CourseDTO;
+import dto.StudentDTO;
+
 import javax.persistence.*;
 
 @Entity
@@ -18,7 +21,7 @@ public class Registration {
     @JoinColumn(name = "cId" , referencedColumnName = "courseId" , nullable = false)
     private Course course;
 
-    public Registration() {
+    public Registration(int regId, String regDate, double regFee, StudentDTO studentDTO, CourseDTO courseDTO) {
     }
 
     public Registration(int regId, String regDate, double regFee, Student student, Course course) {

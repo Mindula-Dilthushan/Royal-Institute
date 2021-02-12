@@ -4,7 +4,7 @@
 
 /*Start MainForm*/
 .mainForm{
-    -fx-background-color: TRANSPARENT;
+    -fx-background-color: linear-gradient(to bottom, #2a5cff, #3866ff, #456fff, #5079ff, #5c82ff, #6c8dff, #7b99ff, #8aa4ff, #a0b5ff, #b5c6ff, #cbd7ff, #e1e8ff);
 }
 /*End MainForm*/
 
@@ -32,3 +32,4 @@
     -fx-fill:#34ace0;
 }
 /* End login form*/
+

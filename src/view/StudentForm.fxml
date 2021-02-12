@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="725.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormController">
+   <children>
+      <Label layoutX="453.0" layoutY="26.0" text="Student Details ">
+         <font>
+            <Font name="Cambria Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCourseNameSearch" layoutX="762.0" layoutY="87.0" onAction="#cmbCourseNameSearchOnAction" prefHeight="31.0" prefWidth="303.0" promptText="Search Course Name" />
+      <Separator layoutX="35.0" layoutY="145.0" prefHeight="0.0" prefWidth="1031.0" />
+      <JFXTextField fx:id="txtStId" focusColor="WHITE" layoutX="183.0" layoutY="151.0" onAction="#txtStIdOnAction" prefHeight="38.0" prefWidth="242.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStName" focusColor="WHITE" layoutX="184.0" layoutY="203.0" prefHeight="38.0" prefWidth="242.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStAddress" focusColor="WHITE" layoutX="184.0" layoutY="249.0" prefHeight="38.0" prefWidth="242.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="txtStDob" layoutX="221.0" layoutY="300.0" />
+      <Label layoutX="54.0" layoutY="215.0" text="ST Name ">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="308.0" text="ST Date Of Birth">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="165.0" text="ST Gender">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbtnMale" layoutX="608.0" layoutY="163.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="rbtnFemale" layoutX="703.0" layoutY="163.0" mnemonicParsing="false" text="Female" />
+      <Label layoutX="54.0" layoutY="261.0" text="ST Address">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="211.0" text="ST Mobile Num">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtStMobile" focusColor="WHITE" layoutX="626.0" layoutY="194.0" prefHeight="38.0" prefWidth="228.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="36.0" layoutY="373.0" prefHeight="0.0" prefWidth="1031.0" />
+      <JFXButton fx:id="btnUpdateStudent" buttonType="RAISED" layoutX="556.0" layoutY="301.0" onAction="#btnUpdateStudentOnAction" prefHeight="38.0" prefWidth="173.0" text="Update Course">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0dff00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDeleteStudent" buttonType="RAISED" layoutX="801.0" layoutY="301.0" onAction="#btnDeleteStudentOnAction" prefHeight="38.0" prefWidth="173.0" text="Delete Course">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0dff00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblStudent" layoutX="37.0" layoutY="436.0" prefHeight="265.0" prefWidth="1031.0">
+        <columns>
+          <TableColumn fx:id="colRegNo" prefWidth="112.0" text="Reg No" />
+          <TableColumn fx:id="colCourseName" prefWidth="186.0" text="Course Name" />
+            <TableColumn fx:id="colStNo" prefWidth="110.0" text="ST No" />
+            <TableColumn fx:id="colStName" prefWidth="138.0" text="ST Name" />
+            <TableColumn fx:id="colStAddress" prefWidth="179.0" text="ST Address" />
+            <TableColumn fx:id="colStContact" prefWidth="164.0" text="ST Contact" />
+            <TableColumn fx:id="colStGender" prefWidth="141.0" text="ST Gender" />
+        </columns>
+      </TableView>
+      <Label layoutX="54.0" layoutY="169.0" text="ST No">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnRefreshTbl" buttonType="RAISED" layoutX="894.0" layoutY="386.0" onAction="#btnRefreshTblOnAction" prefHeight="38.0" prefWidth="173.0" text="Refresh">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0dff00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,15 +1,7 @@
-package entity;
+package dto;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.ArrayList;
-import java.util.List;
+public class StudentDTO {
 
-@Entity
-public class Student {
-    @Id
     private String studentId;
     private String studentName;
     private String studentAddress;
@@ -17,13 +9,10 @@ public class Student {
     private String studentDOB;
     private String studentGender;
 
-    @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
-    private List<Registration> registrationList = new ArrayList<>();
-
-    public Student() {
+    public StudentDTO() {
     }
 
-    public Student(String studentId, String studentName, String studentAddress, String studentContact, String studentDOB, String studentGender) {
+    public StudentDTO(String studentId, String studentName, String studentAddress, String studentContact, String studentDOB, String studentGender) {
         this.studentId = studentId;
         this.studentName = studentName;
         this.studentAddress = studentAddress;
@@ -80,24 +69,15 @@ public class Student {
         this.studentGender = studentGender;
     }
 
-    public List<Registration> getRegistrationList() {
-        return registrationList;
-    }
-
-    public void setRegistrationList(List<Registration> registrationList) {
-        this.registrationList = registrationList;
-    }
-
     @Override
     public String toString() {
-        return "Student{" +
+        return "StudentDTO{" +
                 "studentId='" + studentId + '\'' +
                 ", studentName='" + studentName + '\'' +
                 ", studentAddress='" + studentAddress + '\'' +
                 ", studentContact='" + studentContact + '\'' +
                 ", studentDOB='" + studentDOB + '\'' +
                 ", studentGender='" + studentGender + '\'' +
-                ", registrationList=" + registrationList +
                 '}';
     }
 }
