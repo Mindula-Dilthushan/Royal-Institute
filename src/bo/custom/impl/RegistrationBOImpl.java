@@ -3,8 +3,12 @@ package bo.custom.impl;
 import bo.custom.RegistrationBO;
 import dao.DAOFactory;
 import dao.custom.RegistrationDAO;
+import dto.CourseDTO;
 import dto.RegistrationDTO;
+import dto.StudentDTO;
+import entity.Course;
 import entity.Registration;
+import entity.Student;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,5 +76,42 @@ public class RegistrationBOImpl implements RegistrationBO {
                 );
             }
         return null;
+    }
+
+    @Override
+    public List<RegistrationDTO> getAllRegistration(String studentId) throws Exception {
+       List<RegistrationDTO> registrationDTOList = new ArrayList<>();
+       List<Registration> registrationList = registrationDAO.getAllRegistration(studentId);
+       for (Registration registration : registrationList){
+           registrationDTOList.add(getAllRegis(registration));
+       }
+       return registrationDTOList;
+    }
+    private RegistrationDTO getAllRegis(Registration registration){
+        return new RegistrationDTO(
+                registration.getRegId(),
+                registration.getRegDate(),
+                registration.getRegFee(),
+                getAllStud(registration.getStudent()),
+                getAllCou(registration.getCourse())
+        );
+    }
+    private StudentDTO getAllStud(Student student){
+        return new StudentDTO(
+                student.getStudentId(),
+                student.getStudentName(),
+                student.getStudentAddress(),
+                student.getStudentContact(),
+                student.getStudentDOB(),
+                student.getStudentGender()
+        );
+    }
+    private CourseDTO getAllCou(Course course){
+        return new CourseDTO(
+                course.getCourseId(),
+                course.getCourseName(),
+                course.getDuration(),
+                course.getCourseFee()
+        );
     }
 }

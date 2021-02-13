@@ -18,8 +18,8 @@ public class HibernateUtil {
                 new StandardServiceRegistryBuilder().loadProperties("hibernate/application.properties").build();
 
         Metadata metadata = new MetadataSources(standardServiceRegistry)
-//                            .addAnnotatedClass(Student.class)
-//                            .addAnnotatedClass(Registration.class)
+                            .addAnnotatedClass(Student.class)
+                            .addAnnotatedClass(Registration.class)
                             .addAnnotatedClass(Course.class)
                             .getMetadataBuilder().build();
         return metadata.getSessionFactoryBuilder().build();

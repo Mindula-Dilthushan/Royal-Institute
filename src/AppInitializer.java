@@ -14,30 +14,30 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("view/StartUpForm.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/MainForm.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         scene.setFill(Color.TRANSPARENT);
         primaryStage.show();
 
-        Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                Platform.runLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        Stage window = (Stage) primaryStage.getScene().getWindow();
-                        try {
-                            window.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("view/LoginForm.fxml"))));
-                            primaryStage.centerOnScreen();
-                        } catch (Exception e) {
-                        }
-                    }
-                });
-            }
-        }, 1500);
+//        Timer timer = new Timer();
+//        timer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                Platform.runLater(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        Stage window = (Stage) primaryStage.getScene().getWindow();
+//                        try {
+//                            window.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("view/LoginForm.fxml"))));
+//                            primaryStage.centerOnScreen();
+//                        } catch (Exception e) {
+//                        }
+//                    }
+//                });
+//            }
+//        }, 1500);
     }
 
     public static void main(String[] args) {

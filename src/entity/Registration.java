@@ -2,14 +2,13 @@ package entity;
 
 import dto.CourseDTO;
 import dto.StudentDTO;
-
 import javax.persistence.*;
 
 @Entity
 public class Registration {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int regId;
+    private String regId;
     private String regDate;
     private double regFee;
 
@@ -21,10 +20,10 @@ public class Registration {
     @JoinColumn(name = "cId" , referencedColumnName = "courseId" , nullable = false)
     private Course course;
 
-    public Registration(int regId, String regDate, double regFee, StudentDTO studentDTO, CourseDTO courseDTO) {
+    public Registration(String regId, String regDate, double regFee, StudentDTO studentDTO, CourseDTO courseDTO) {
     }
 
-    public Registration(int regId, String regDate, double regFee, Student student, Course course) {
+    public Registration(String regId, String regDate, double regFee, Student student, Course course) {
         this.regId = regId;
         this.regDate = regDate;
         this.regFee = regFee;
@@ -32,11 +31,11 @@ public class Registration {
         this.course = course;
     }
 
-    public int getRegId() {
+    public String getRegId() {
         return regId;
     }
 
-    public void setRegId(int regId) {
+    public void setRegId(String regId) {
         this.regId = regId;
     }
 

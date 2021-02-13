@@ -2,31 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0def8816-371c-4cc5-821e-ce22c5c246ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/AddRegistrationBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/RegistrationBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/StudentBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/AddRegistrationBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/RegistrationBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/StudentBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/StudentFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/RegistrationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/StudentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/StudentDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/RegistrationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/StudentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/StudentForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tm/RegistrationTM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tm/StudentTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/200ab843-4ec8-4122-b64f-db1a9492d8be.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/200ab843-4ec8-4122-b64f-db1a9492d8be.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/BOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/AddRegistrationBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/AddRegistrationBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/RegistrationBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/RegistrationBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/AddRegistrationBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/AddRegistrationBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/RegistrationBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/RegistrationBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CourseFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CourseFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DashboardFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/RegistrationFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegistrationFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StudentFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/RegistrationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/RegistrationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/RegistrationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/RegistrationDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CourseForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CourseForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DashboardForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/MainForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/RegistrationForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegistrationForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/styles/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/styles/StyleSheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/StudentForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudentForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,19 +85,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AppInitializer" />
@@ -124,6 +112,10 @@
       <workItem from="1613092853547" duration="7000" />
       <workItem from="1613093149681" duration="1516000" />
       <workItem from="1613096560394" duration="6647000" />
+      <workItem from="1613107618719" duration="2394000" />
+      <workItem from="1613181417235" duration="4210000" />
+      <workItem from="1613186603739" duration="4793000" />
+      <workItem from="1613192400545" duration="39000" />
     </task>
     <servers />
   </component>
@@ -144,5 +136,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Royal_Institute$AppInitializer.ic" NAME="AppInitializer Coverage Results" MODIFIED="1613192404967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

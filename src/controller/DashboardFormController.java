@@ -15,12 +15,12 @@ public class DashboardFormController {
     public JFXButton btnStudent;
 
     public void initialize(){
-        try {
-            dashboardAnchor.getChildren().clear();
-            AnchorPane load = FXMLLoader.load(this.getClass().getResource("/view/RegistrationForm.fxml"));
-            dashboardAnchor.getChildren().addAll(load.getChildren());
-        }catch (Exception e){
-        }
+//        try {
+//            dashboardAnchor.getChildren().clear();
+//            AnchorPane load = FXMLLoader.load(this.getClass().getResource("/view/RegistrationForm.fxml"));
+//            dashboardAnchor.getChildren().addAll(load.getChildren());
+//        }catch (Exception e){
+//        }
     }
 
     public void btnExitOnAction(ActionEvent actionEvent) {

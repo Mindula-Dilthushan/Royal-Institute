@@ -30,40 +30,40 @@
             <Font name="Cambria Bold" size="27.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnRegistration" buttonType="RAISED" layoutX="63.0" layoutY="243.0" onAction="#btnRegistrationOnAction" prefHeight="49.0" prefWidth="166.0" text="Registration">
+      <JFXButton fx:id="btnRegistration" buttonType="RAISED" layoutX="63.0" layoutY="243.0" onAction="#btnRegistrationOnAction" prefHeight="49.0" prefWidth="166.0" style="-fx-background-radius: 50;" text="Registration">
          <font>
             <Font name="Cambria" size="25.0" />
          </font>
          <ripplerFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
-                  <Stop color="RED" />
+                  <Stop color="WHITE" />
                   <Stop color="WHITE" offset="1.0" />
                </stops>
             </LinearGradient>
          </ripplerFill>
       </JFXButton>
-      <JFXButton fx:id="btnStudent" buttonType="RAISED" layoutX="63.0" layoutY="312.0" onAction="#btnStudentOnAction" prefHeight="49.0" prefWidth="118.0" text="Student">
+      <JFXButton fx:id="btnStudent" buttonType="RAISED" layoutX="63.0" layoutY="312.0" onAction="#btnStudentOnAction" prefHeight="49.0" prefWidth="118.0" style="-fx-background-radius: 50;" text="Student">
          <font>
             <Font name="Cambria" size="25.0" />
          </font>
          <ripplerFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
-                  <Stop color="RED" />
+                  <Stop color="WHITE" />
                   <Stop color="WHITE" offset="1.0" />
                </stops>
             </LinearGradient>
          </ripplerFill>
       </JFXButton>
-      <JFXButton fx:id="btnCourse" buttonType="RAISED" layoutX="63.0" layoutY="379.0" onAction="#btnCourseOnAction" text="Course">
+      <JFXButton fx:id="btnCourse" buttonType="RAISED" layoutX="63.0" layoutY="379.0" onAction="#btnCourseOnAction" style="-fx-background-radius: 50;" text="Course">
          <font>
             <Font name="Cambria" size="25.0" />
          </font>
          <ripplerFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
-                  <Stop color="RED" />
+                  <Stop color="WHITE" />
                   <Stop color="WHITE" offset="1.0" />
                </stops>
             </LinearGradient>
@@ -84,7 +84,7 @@
             <Image url="@../asserts/registration_127px.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="btnExit" buttonType="RAISED" contentDisplay="CENTER" layoutX="11.0" layoutY="680.0" onAction="#btnExitOnAction" text=" ">
+      <JFXButton fx:id="btnExit" buttonType="RAISED" contentDisplay="CENTER" layoutX="11.0" layoutY="680.0" onAction="#btnExitOnAction" style="-fx-background-radius: 50;" text=" ">
          <graphic>
             <ImageView fitHeight="47.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <image>

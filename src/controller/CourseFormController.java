@@ -30,8 +30,7 @@ public class CourseFormController {
     public TableColumn <CourseTM , Double> colCourseFee;
     public JFXButton btnDeleteCourse;
 
-    private CourseBO courseBO = (CourseBO) BOFactory.getBoFactory().getSuperBO(BOFactory.BOType.COURSE);
-
+    CourseBO courseBO = (CourseBO) BOFactory.getBoFactory().getSuperBO(BOFactory.BOType.COURSE);
     ObservableList<CourseTM> courseTMObservableList = FXCollections.observableArrayList();
 
     public void initialize(){

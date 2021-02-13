@@ -14,7 +14,6 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="725.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormController">
    <children>
       <Label layoutX="453.0" layoutY="26.0" text="Student Details ">
@@ -99,15 +98,16 @@
             <Font name="Cambria" size="20.0" />
          </font>
       </JFXButton>
-      <TableView fx:id="tblStudent" layoutX="37.0" layoutY="436.0" prefHeight="265.0" prefWidth="1031.0">
+      <TableView fx:id="tblStudent" layoutX="16.0" layoutY="439.0" prefHeight="265.0" prefWidth="1056.0">
         <columns>
-          <TableColumn fx:id="colRegNo" prefWidth="112.0" text="Reg No" />
-          <TableColumn fx:id="colCourseName" prefWidth="186.0" text="Course Name" />
-            <TableColumn fx:id="colStNo" prefWidth="110.0" text="ST No" />
-            <TableColumn fx:id="colStName" prefWidth="138.0" text="ST Name" />
-            <TableColumn fx:id="colStAddress" prefWidth="179.0" text="ST Address" />
-            <TableColumn fx:id="colStContact" prefWidth="164.0" text="ST Contact" />
-            <TableColumn fx:id="colStGender" prefWidth="141.0" text="ST Gender" />
+          <TableColumn fx:id="colRegNo" prefWidth="94.0" text="Reg No" />
+          <TableColumn fx:id="colCourseName" prefWidth="121.0" text="Course Name" />
+            <TableColumn fx:id="colStNo" prefWidth="94.0" text="ST No" />
+            <TableColumn fx:id="colStName" prefWidth="140.0" text="ST Name" />
+            <TableColumn fx:id="colStAddress" prefWidth="144.0" text="ST Address" />
+            <TableColumn fx:id="colStContact" prefWidth="156.0" text="ST Contact" />
+            <TableColumn fx:id="colStDOB" prefWidth="152.0" text="ST DOB" />
+            <TableColumn fx:id="colStGender" prefWidth="154.0" text="ST Gender" />
         </columns>
       </TableView>
       <Label layoutX="54.0" layoutY="169.0" text="ST No">

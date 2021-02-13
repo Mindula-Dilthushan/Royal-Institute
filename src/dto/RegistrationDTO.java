@@ -2,16 +2,16 @@ package dto;
 
 public class RegistrationDTO {
 
-    private int regId;
+    private String regId;
     private String regDate;
     private double regFee;
     private StudentDTO studentDTO;
     private CourseDTO courseDTO;
 
-    public RegistrationDTO() {
+    public RegistrationDTO(String regId, String regDate, double regFee) {
     }
 
-    public RegistrationDTO(int regId, String regDate, double regFee, StudentDTO studentDTO, CourseDTO courseDTO) {
+    public RegistrationDTO(String regId, String regDate, double regFee, StudentDTO studentDTO, CourseDTO courseDTO) {
         this.regId = regId;
         this.regDate = regDate;
         this.regFee = regFee;
@@ -19,11 +19,11 @@ public class RegistrationDTO {
         this.courseDTO = courseDTO;
     }
 
-    public int getRegId() {
+    public String getRegId() {
         return regId;
     }
 
-    public void setRegId(int regId) {
+    public void setRegId(String regId) {
         this.regId = regId;
     }
 
@@ -61,7 +61,7 @@ public class RegistrationDTO {
 
     @Override
     public String toString() {
-        return "RegistrationDAO{" +
+        return "RegistrationDTO{" +
                 "regId=" + regId +
                 ", regDate='" + regDate + '\'' +
                 ", regFee=" + regFee +

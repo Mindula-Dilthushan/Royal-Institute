@@ -64,7 +64,6 @@ public class Course {
     public List<Registration> getRegistrationList() {
         return registrationList;
     }
-
     public void setRegistrationList(List<Registration> registrationList) {
         this.registrationList = registrationList;
     }

@@ -84,15 +84,15 @@
          </font>
       </JFXButton>
       <Separator layoutX="35.0" layoutY="388.0" prefHeight="0.0" prefWidth="1031.0" />
-      <TableView fx:id="tblCourse" layoutX="35.0" layoutY="415.0" prefHeight="237.0" prefWidth="826.0">
+      <TableView fx:id="tblCourse" layoutX="73.0" layoutY="455.0" prefHeight="237.0" prefWidth="954.0">
         <columns>
-          <TableColumn fx:id="colCourseID" prefWidth="125.0" text="Course ID" />
-            <TableColumn fx:id="colCourseName" prefWidth="301.0" text="Course Name" />
-            <TableColumn fx:id="colCourseDuration" prefWidth="203.0" text="Course Duration" />
-            <TableColumn fx:id="colCourseFee" prefWidth="196.0" text="Course Fee" />
+          <TableColumn fx:id="colCourseID" prefWidth="159.0" text="Course ID" />
+            <TableColumn fx:id="colCourseName" prefWidth="267.0" text="Course Name" />
+            <TableColumn fx:id="colCourseDuration" prefWidth="258.0" text="Course Duration" />
+            <TableColumn fx:id="colCourseFee" prefWidth="255.0" text="Course Fee" />
         </columns>
       </TableView>
-      <JFXButton fx:id="btnDeleteCourse" buttonType="RAISED" layoutX="893.0" layoutY="415.0" onAction="#btnDeleteCourseOnAction" prefHeight="38.0" prefWidth="173.0" text="Delete Course">
+      <JFXButton fx:id="btnDeleteCourse" buttonType="RAISED" layoutX="854.0" layoutY="401.0" onAction="#btnDeleteCourseOnAction" prefHeight="38.0" prefWidth="173.0" text="Delete Course">
          <ripplerFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>

@@ -76,4 +76,17 @@ public class RegistrationDAOImpl implements RegistrationDAO {
         }
         return null;
     }
+
+    @Override
+    public List<Registration> getAllRegistration(String studentID) throws Exception {
+        try {
+            Session session = sessionFactory.openSession();
+            session.beginTransaction();
+            List<Registration> registrationList = session.createNativeQuery("SELECT * FROM registration WHERE course_courseId=?",Registration.class).setParameter(1,studentID).list();
+            session.getTransaction().commit();
+            return registrationList;
+        }catch (Exception e){
+        }
+        return null;
+    }
 }
